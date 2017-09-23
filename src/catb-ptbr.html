@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A catedral e o Bazar</title>
+</head>
+<body>
 ﻿<h1>A Catedral e o Bazar  - Eric S. Raymond</h1> Autor: coffnix &lt;coffnix at
 ﻿gmail.com&gt; Data: 09/11/2006
 
@@ -21,15 +28,13 @@ software.</p>
 
 <p>Este artigo é uma tradução do clássico documento <em>A catedral e o
 bazar</em>, que pode ser encontrado em sua forma original em: <a
-href="http://catb.org/esr/writings/cathedral-bazaar/" rel="nofollow"
-target="_blank" rel="nofollow" target="_blank
-">http://catb.org/esr/writings/cathedral-bazaar/</a></p>
+href="http://catb.org/esr/writings/cathedral-bazaar/">
+http://catb.org/esr/writings/cathedral-bazaar/</a></p>
 
 <p>Traduzido para o português por Erik Kohler &lt;ekohler at programmer.net&gt;
 em: <a
 href="http://www.geocities.com/CollegePark/Union/3590/pt-cathedral-bazaar.html"
-rel="nofollow" target="_blank" rel="nofollow " target="_blank
-">http://www.geocities.com/CollegePark/Union/3590/pt-cathedral-bazaar.html</a>
+>http://www.geocities.com/CollegePark/Union/3590/pt-cathedral-bazaar.html</a>
 </p>
 
 <h1>A catedral e o bazar</h1>
@@ -111,9 +116,7 @@ servidor POP3 incluído com sistema operacional BSD/OS do locke.</p>
 um. Na verdade, eu encontrei três ou quatro. Eu usei o pop-perl por algum tempo,
 mas faltava o que parecia uma característica óbvia, a habilidade de alterar os
 endereços no correio recebido para que as respostas fossem enviadas
-corretamente.
-
-</p>
+corretamente.</p>
 
 <p>O problema era este: suponha que alguém chamado 'joe' no locke tenha me
 enviado uma mensagem. Se eu capturasse o correio para o snark e tentasse então
@@ -125,12 +128,12 @@ inexistente no snark. Editar manualmente os endereços de resposta para adiciona
 nenhum dos clientes POP existentes sabiam como! E isto nos traz à primeira
 lição:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>1. Todo bom trabalho de software começa colocando o dedo na
-ferida de um programador.</em></strong></p>
+<strong><em>1. Todo bom trabalho de software começa colocando o dedo na ferida
+de um programador.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Talvez isto deveria ter sido óbvio (um antigo provérbio diz que <q>A
 necessidade é a mãe da invenção</q>) mas muitas vezes os programadores gastam
@@ -144,12 +147,12 @@ POP3 para competir com os existentes? De maneira alguma! Eu olhei com cuidado os
 utilitários POP que eu tinha à disposição, perguntando-me <em>qual deles é o
 mais próximo do que eu quero? Porque…</em></p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>2. Os programadores bons sabem o que escrever. Os grandes sabem o
-que reescrever (e reusar).</em></strong></p>
+<strong><em>2. Os programadores bons sabem o que escrever. Os grandes sabem o
+que reescrever (e reusar).</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Embora eu não me considere um grande programador, eu tento me passar por um.
 Uma importante característica dos grandes é a preguiça construtiva. Eles sabem
@@ -157,7 +160,7 @@ que você ganha um 'A' não por esforço, mas por resultados, e é quase sempre 
 fácil partir de uma boa solução parcial do que do nada.</p>
 
 <p>Linus Torvalds, por exemplo, não tentou realmente escrever Linux do nada. Ao
-contrário, ele começou reusando código e idéias do Minix, um pequeno sistema
+contrário, ele começou reusando código e ideias do Minix, um pequeno sistema
 operacional Unix-like para máquinas 386. Eventualmente todo o código Minix se
 foi ou foi completamente reescrito – mas quando estava lá, forneceu as bases
 para o infante que se transformaria no Linux.</p>
@@ -204,13 +207,12 @@ desenvolvido) só para me divertir.</p>
 <p>Mas eu tinha uma razão mais teórica para pensar que trocar seria uma boa
 idéia, alguma coisa que eu aprendi muito antes do Linux.</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>3. “Planeje jogar algo fora; você irá, de qualquer maneira”.
-(Fred Brooks, "The Mythical Man-Month", Capítulo 11)
-</em></strong></p>
+<strong><em>3. <q>Planeje jogar algo fora; você irá, de qualquer maneira</q>.
+(<cite>Fred Brooks, "The Mythical Man-Month", Capítulo 11</cite>)</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Ou, colocando de outra forma, você frequentemente não entende realmente o
 problema até depois da primeira vez que você implementa uma solução. Na segunda
@@ -235,22 +237,21 @@ sabia iriam provavelmente levar a importantes mudanças.</p>
 <p>Em uma cultura de software que encoraja a troca de código, isto é um caminho
 natural para um projeto evoluir. Eu estava representando isto:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>4. Se você tem a atitude certa, problemas interessantes irão
-encontrá-lo.</em></strong></p>
+<strong><em>4. Se você tem a atitude certa, problemas interessantes irão
+encontrá-lo.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Mas a atitude do Carl Harris foi ainda mais importante. Ele entendeu que</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>5. Quando você perde interesse em um programa, sua última
-obrigação a fazer com ele é entregá-lo a um sucessor competente.
-</em></strong></p>
+<strong><em>5. Quando você perde interesse em um programa, sua última obrigação
+a fazer com ele é entregá-lo a um sucessor competente.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Sem ao menos ter que discutir isso, Carl e eu sabíamos que nós tínhamos um
 objetivo em comum de ter a melhor solução disponível. A única questão para nós
@@ -272,13 +273,12 @@ tremendamente útil para reduzir o tempo de depuração. Com um pouco de estímu
 seus usuários diagnosticarão problemas, sugerir correções e ajudar a melhorar o
 código muito mais rapidamente do que você poderia fazer sem ajuda.</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>6. Tratar seus usuários como codesenvolvedores é
-seu caminho mais fácil para uma melhora do código e depuração eficaz.</em>
-</strong></p>
+<strong><em>6. Tratar seus usuários como codesenvolvedores é seu caminho mais
+fácil para uma melhora do código e depuração eficaz.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>O poder deste efeito é fácil de se subestimar. De fato, todos nós do mundo do
 código aberto subestimamos drasticamente como isto incrementaria o número de
@@ -347,12 +347,12 @@ frequência desconhecida de liberações de núcleo de sistemas.</p>
 <p>Linus estava tratando seus usuários como codesenvolvedores na maneira mais
 eficaz possível:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>7. Libere cedo. Libere frequentemente. E ouça seus
-fregueses.</em></strong></p>
+<strong><em>7. Libere cedo. Libere frequentemente. E ouça seus
+fregueses.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Isso não era muito a inovação do Linus (algo como isso estava sendo a
 tradição do mundo Unix por um longo tempo), mas em elevar isto até um grau de
@@ -393,13 +393,13 @@ instabilidade no código e extinção da base de usuários se qualquer erro sér
 provasse ser intratável. Linus estava se comportando como se acreditasse em algo
 como isto:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>8. Dada uma base grande o suficiente de beta-testers
-e codesenvolvedores, praticamente todo problema será caracterizado rapidamente e
-a solução será óbvia para alguém.</em></strong></p>
+<strong><em>8. Dada uma base grande o suficiente de betatesters e
+codesenvolvedores, praticamente todo problema será caracterizado rapidamente e a
+solução será óbvia para alguém.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Ou, menos formalmente, <q>Dados olhos suficientes, todos os erros são
 triviais.</q> Eu chamo isso de: <em>Lei de Linus</em>.</p>
@@ -468,7 +468,7 @@ um ângulo diferente do problema. O <em>efeito Delphi</em> parece funcionar
 precisamente por causa desta variação. No contexto específico da depuração, a
 variação também tende a reduzir o feito da duplicação.</p>
 
-<p>Então adicionar mais beta-testers pode não reduzir a complexidade de um erro
+<p>Então adicionar mais betatesters pode não reduzir a complexidade de um erro
 <em>profundo</em> corrente do ponto de vista do desenvolvedor, mas aumenta a
 probabilidade que a ferramenta de alguém irá de encontro ao problema de uma
 maneira tal que o problema será trivial para esta pessoa.</p>
@@ -508,12 +508,12 @@ mudanças anteriores ilustram o princípio geral que é bom para os programadore
 manterem em mente, especialmente em linguagens como C que não implementam
 naturalmente tipagem dinâmica:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>9. Estrutura de dados inteligentes e código burro trabalham muito
-melhor que ao contrário.</em></strong></p>
+<strong><em>9. Estrutura de dados inteligentes e código burro trabalham muito
+melhor que ao contrário.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Brooks, Capítulo 11: <q>Mostre-me seu [código] e esconda suas [estruturas de
 dados], e eu poderei continuar mistificado. Mostre-me suas [estruturas de
@@ -542,13 +542,13 @@ Desta forma:</p>
 	cada dez dias; durante períodos de desenvolvimento intenso, uma vez por
 	dia).</li>
 
-	<li>Eu aumentei minha lista de beta testers adicionando a ela todo mundo
+	<li>Eu aumentei minha lista de betatesters adicionando a ela todo mundo
 	que me contatava sobre o fetchmail.</li>
 
-	<li>Eu mandei extensos anúncios à lista de beta testers toda vez que eu
+	<li>Eu mandei extensos anúncios à lista de betatesters toda vez que eu
 	liberava, encorajando as pessoas a participar.</li>
 
-	<li>4. E eu ouvia meus beta-testers, questionando-os sobre decisões de
+	<li>4. E eu ouvia meus betatesters, questionando-os sobre decisões de
 	desenvolvimento e incitando-os toda vez que eles mandavam consertos e
 	respostas. </li>
 
@@ -560,15 +560,15 @@ morreria para ter, muitas vezes com ótimos consertos incluídos. Eu obtive
 críticas severas, obtive mensagens de fãs, obtive sugestões inteligentes de
 características. O que leva a:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>10. Se você tratar seus beta-testers como seu recurso mais valioso, eles
-responderão tornando-se seu mais valioso recurso.</em></strong></p>
+<strong><em>10. Se você tratar seus betatesters como seu recurso mais valioso,
+eles responderão tornando-se seu mais valioso recurso.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Uma medida interessante do sucesso do fetchmail é o simples tamanho da lista
-de beta testers, amigos do fetchmail. Ao escrever este texto ela possuía 249
+de betatesters, amigos do fetchmail. Ao escrever este texto ela possuía 249
 membros e são adicionados dois ou três por semana.</p>
 
 <p>De fato, conforme eu reviso ao final de Maio de 1997, a lista está começando
@@ -611,8 +611,12 @@ primeiro grande retorno que eu obtive por tentar conscientemente emular os
 métodos do Linus. Um usuário me deu esta ideia brilhante – tudo que eu tive que
 fazer foi entender as implicações.</p>
 
-<p><strong><em>11. A melhor coisa depois de ter boas ideias é reconhecer boas
-ideias dos seus usuários. As vezes a última é melhor.</em></strong></p>
+<aside>
+
+<strong><em>11. A melhor coisa depois de ter boas ideias é reconhecer boas
+ideias dos seus usuários. As vezes a última é melhor.</em></strong>
+
+</aside>
 
 <p>E o que é interessante, você irá rapidamente descobrir que se você está se
 achando completamente desacreditado sobre o quanto você deve a outras pessoas, o
@@ -630,18 +634,18 @@ criador do Perl.)</p>
 ganhar um louvor semelhante não apenas dos meus usuários mas de outras pessoas
 que deixaram as palavras escaparem. Eu guardei algumas destas mensagens; irei
 olhar para elas novamente algum dia se eu começar a questionar se a minha vida
-valeu a pena:-).</p>
+valeu a pena :-).</p>
 
 <p>Mas há duas lições mais fundamentais aqui, não políticas, que são gerais para
 todos os tipos de projeto.</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>12. Frequentemente, as soluções mais impressionantes e inovadoras
+<strong><em>12. Frequentemente, as soluções mais impressionantes e inovadoras
 surgem ao se perceber que o seu conceito do problema estava
-errado.</em></strong></p>
+errado.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Eu estava tentando resolver o problema errado ao desenvolver continuamente o
 popclient como um MTA/MDA combinado com todos os tipos de modos de distribuição
@@ -689,12 +693,12 @@ fazer isso sem perda de efetividade. Antoine de Saint-Exupéry (que foi um
 aviador e projetista de aviões quando ele não estava sendo o autor de livros
 clássicos infantis) disse:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>13. "A perfeição (em projetar) é alcançada não quando não há mais
-nada a adicionar, mas quando não há nada para jogar fora."</em></strong></p>
+<strong><em>13. “A perfeição (em projetar) é alcançada não quando não há mais
+nada a adicionar, mas quando não há nada para jogar fora.”</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Quando o seu código está ficando tão bom quanto simples, é quando você sabe
 que está correto. E no processo, o projeto do fetchmail adquiriu uma identidade
@@ -705,13 +709,14 @@ irmão do sendmail do que o velho popclient parecia; ambos eram MTAs, mas aonde 
 sendmail passa e então envia, o novo popclient coleta e então envia. Então, após
 2 meses, eu mudei o nome para fetchmail.</p>
 
-<h1>Fetchmail cresce</h1><p> Lá estava eu com um projeto elegante e inovador,
-um código que eu sabia que funcionava bem porque eu usava todos os dias, e uma
-crescente lista de beta-testers. E gradualmente eu percebia que eu não estava
-mais ocupado com uma trivial codificação pessoal que porventura poderia se
-tornar útil para algumas pessoas. Eu tinha em minhas mãos um programa que todos
-os usuários de um sistema Unix com uma conexão de correio SLIP/PPP realmente
-precisavam.</p>
+<h1>Fetchmail cresce</h1>
+
+<p> Lá estava eu com um projeto elegante e inovador, um código que eu sabia que
+funcionava bem porque eu usava todos os dias, e uma crescente lista de
+betatesters. E gradualmente eu percebia que eu não estava mais ocupado com uma
+trivial codificação pessoal que porventura poderia se tornar útil para algumas
+pessoas. Eu tinha em minhas mãos um programa que todos os usuários de um sistema
+Unix com uma conexão de correio SLIP/PPP realmente precisavam.</p>
 
 <p>Com a característica de reenvio por SMTP, ele passou muito à frente da
 competição para potencialmente se tornar um <em>category killer</em>, um destes
@@ -720,7 +725,7 @@ alternativas não são somente descartadas como também esquecidas.</p>
 
 <p>Eu penso que você não pode realmente almejar ou planejar um resultado como
 este. Você tem que ser atraído para isso por ideias de projeto tão poderosas que
-posteriormente os resultados parecem inevitáveis, naturais, mesmo predestinados.
+posteriormente os resultados parecem inevitáveis, naturais, mesmos predestinados.
 A única maneira de tentar ideias como esta é tendo muitas ideias – ou tendo o
 julgamento de engenharia para levar as boas ideias das outras pessoas além do
 que estas que as tiveram pensariam que elas poderiam ir.</p>
@@ -758,13 +763,13 @@ elaborados.</p>
 <p>Mas o endereçamento multidrop se tornou uma decisão de projeto excelente.
 Aqui está como eu soube:</p>
 
-</blockquote>
+<aside>
 
-<p><strong><em>14. Qualquer ferramenta deve ser útil da maneira esperada, mas
-uma ferramenta verdadeiramente <em>boa</em> leva ela própria a usos que você
-nunca esperou.</em></strong></p>
+<strong><em>14. Qualquer ferramenta deve ser útil da maneira esperada, mas uma
+ferramenta verdadeiramente <em>boa</em> leva ela própria a usos que você nunca
+esperou.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>O uso inesperado para o multidrop do fetchmail é executar mailing lists com a
 lista mantida, e expansão de apelidos feita, no lado do cliente da conexão
@@ -777,10 +782,14 @@ operação MIME 8-bit. Isto foi muito fácil de fazer, porque eu estava sendo
 cuidadoso mantendo o código pronto para 8-bit. Não porque eu antecipei a demanda
 para esta característica, mas em obediência a outra regra:</p>
 
-<p><strong><em>15. Quando escrevendo um software gateway de qualquer tipo, faça
+<aside>
+
+<strong><em>15. Quando escrevendo um software gateway de qualquer tipo, faça
 tudo para perturbar o conjunto de dados o menos possível – e <em>nunca</em>
 jogue fora informação a não ser que o destinatário force você a
-isto!</em></strong></p>
+isto!</em></strong>
+
+</aside>
 
 <p>Se eu não tivesse obedecido esta regra, o suporte a MIME 8-bit teria sido
 difícil e cheio de erros. Como estava, tudo o que tive que fazer foi ler a RFC
@@ -793,9 +802,10 @@ tempo, e ainda não estou inteiramente alegre sobre isto. Mas se você está
 escrevendo para o mundo, você tem que ouvir os seus clientes – isto não muda
 somente porque eles não estão pagando dinheiro a você.</p>
 
-<h1>Algumas lições a mais do Fetchmail</h1> Antes de voltarmos ao assunto de
-engenharia de software em geral, existem algumas lições a mais da experiência do
-fetchmail para ponderar.</p>
+<h1>Algumas lições a mais do Fetchmail</h1>
+
+<p> Antes de voltarmos ao assunto de engenharia de software em geral, existem
+algumas lições a mais da experiência do fetchmail para ponderar.</p>
 
 <p>A sintaxe do arquivo rc inclui palavras-chaves <em>ruidosas</em> opcionais
 que são inteiramente ignoradas pelo analisador. A sintaxe parecida com o Inglês
@@ -832,9 +842,7 @@ sintaxe de uma linguagem English-like frequentemente demanda que o
 como a semelhança superficial com a linguagem natural é tão confusa como a
 sintaxe tradicional seria. (Você vê isso em várias linguagens chamadas de
 <em>quarta geração</em> e em linguagens de consulta de banco de dados
-comerciais.)
-
-</p>
+comerciais.)</p>
 
 <p>A sintaxe de controle do fetchmail parece evitar estes problemas porque o
 domínio da linguagem é extremamente restrito. Não é perto de uma linguagem de
@@ -843,12 +851,12 @@ há pouco potencial para confusão em mover mentalmente entre um pequeno conjunt
 do Inglês e a real linguagem de controle. Eu acho que há uma lição mais
 abrangente aqui:</p>
 
-<blockquote>
+<aside>
 
-<p><strong><em>16. Quando sua linguagem não está perto de um Turing completo, açúcar
-sintático pode ser seu amigo.</em></strong></p>
+<strong><em>16. Quando sua linguagem não está perto de um Turing completo,
+açúcar sintático pode ser seu amigo.</em></strong>
 
-</blockquote>
+</aside>
 
 <p>Outra lição é sobre segurança por obscuridade. Alguns usuários do fetchmail
 me pediram para mudar o software para guardar as senhas encriptadas no arquivo
@@ -863,10 +871,12 @@ retirar o decodificador do próprio fetchmail para consegui-la.</p>
 falsa impressão de segurança para pessoas que não pensaram bem sobre este
 assunto. Aqui a regra geral é:</p>
 
-<p>17. Um sistema de segurança é tão seguro quanto é secreto. Esteja atento a
-pseudos-segredos.
+<aside>
 
-</p>
+<strong><em>17. Um sistema de segurança é tão seguro quanto é secreto. Esteja
+atento a pseudos-segredos.</em></strong>
+
+</aside>
 
 <h1>Pré-condições necessárias para o estilo bazar</h1>
 
@@ -956,9 +966,7 @@ gostem dele e que o ajudem. Não é uma coincidência que eu seja um enérgico
 extrovertido que gosta de trabalhar com pessoas e tenha um pouco de porte e
 instinto de um cômico. Para fazer o modelo bazar funcionar, isto ajuda
 enormemente se você tem, pelo menos, um pouco de habilidade para encantar as
-pessoas.
-
-</p>
+pessoas.</p>
 
 <h1>O contexto social do código aberto</h1>
 
@@ -967,8 +975,12 @@ problemas diários do autor, e se espalham porque o problema se torna típico pa
 uma grande classe de usuários. Isto nos traz novamente para a regra 1,
 recolocada talvez de uma maneira mais útil:</p>
 
-<p>18. Para resolver um problema interessante, comece achando um problema que é
-interessante para você.</p>
+<aside>
+
+<strong><em>18. Para resolver um problema interessante, comece achando um
+problema que é interessante para você.</em></strong>
+
+</aside>
 
 <p>Isso foi o que aconteceu com Carl Harris e o ancestral popclient, e também
 comigo e o fetchmail. Mas isso foi entendido por um longo tempo. O ponto
@@ -976,7 +988,7 @@ interessante, o ponto que as histórias do <em>Linux</em> e do fetchmail parecem
 demandar o nosso foco, é o próximo estágio – a evolução do software na presença
 de uma comunidade grande e ativa de codesenvolvedores.</p>
 
-<p>Em "The Mythical Man-Month", Fred Brooks observou que o tempo de um
+<p>Em “The Mythical Man-Month”, Fred Brooks observou que o tempo de um
 programador não é acumulativo; adicionar desenvolvedores em um projeto atrasado
 de software faz com que ele se torne mais atrasado. Ele expôs que a complexidade
 e custos de comunicação de um projeto crescem com o quadrado do número de
@@ -1037,12 +1049,11 @@ codesenvolvedores e obter o máximo suporte do ambiente.</p>
 estar baseados em relações de poder – e mesmo que pudessem, a liderança por
 coerção não produziria os resultados que nós vemos. Weinberg cita a
 autobiografia do anarquista do século 19 chamado <cite>Pyotr Alexeyvich Kropotkin,
-Memórias de um Revolucionista</cite> para demonstrar o efeito neste assunto:
-</p>
+Memórias de um Revolucionista</cite> para demonstrar o efeito neste assunto:</p>
 
-<blockquote>
+<aside>
 
-<p>"Tendo sido criado em uma família possuidora de vassalos, eu entrei a vida
+<p>”Tendo sido criado em uma família possuidora de vassalos, eu entrei a vida
 ativa, como todos os jovens homens da minha idade, com uma grande confidência na
 necessidade de comandar, ordenar, repreender, punir e etc. Mas quando cedo tive
 que conduzir empreendimentos sérios e lidar com homens [livres], e quando cada
@@ -1051,9 +1062,9 @@ diferença entre atuar segundo o princípio de comando e disciplina e atuar
 segundo o princípio da compreensão comum. O primeiro funciona de forma admirável
 em uma parada militar, mas de nada vale aonde a vida real é considerada, e o
 objetivo pode ser atingido somente pelo esforço severo de muitos propósitos
-convergentes."</p>
+convergentes.”</p>
 
-</blockquote>
+</aside>
 
 <p>O <em>esforço severo de muitos propósitos convergentes</em> é precisamente o
 que um projeto como o Linux requer – e o <em>princípio de comando</em> é
@@ -1115,9 +1126,13 @@ desenvolvedor/coordenador forte pode usar a Internet para capturar os benefício
 de se ter vários codesenvolvedores sem fazer o projeto colapsar em uma confusão
 caótica. Então eu contraproponho para a Lei de Brooks o seguinte:</p>
 
-<p>19. Contanto que o coordenador do desenvolvimento tenha uma mídia pelo menos
-tão boa quanto a Internet, e saiba como liderar sem coerção, muitas cabeças são
-inevitavelmente melhores que uma.</p>
+<aside>
+
+<strong><em>19. Contanto que o coordenador do desenvolvimento tenha uma mídia
+pelo menos tão boa quanto a Internet, e saiba como liderar sem coerção, muitas
+cabeças são inevitavelmente melhores que uma.</em></strong>
+
+</aside>
 
 <p>Eu acredito que o futuro do software de código aberto pertencerá
 gradativamente a pessoas que saibam como jogar o jogo do Linus, pessoas que
@@ -1145,8 +1160,7 @@ mais tempo hábil ordens de magnitude acima em um problema.</p>
 <p>Este documento foi enriquecido através de conversas com um grande número de
 pessoas que ajudaram a depurá-lo. Agradecimentos particulares a Jeff Dutky
 &lt;dutky@wam.umd.edu&gt;, que sugeriu a formulação <em>depuração é
-paralelizável</em>, e ajudou a desenvolver a análise que se procedeu a isso.
-</p>
+paralelizável</em>, e ajudou a desenvolver a análise que se procedeu a isso.</p>
 
 <p>E também a Nancy Lebovitz &lt;nancyl@universe.digex.net&gt; pela sua sugestão
 que eu imitei Weinberg ao citar Kropotkin.</p>
@@ -1192,8 +1206,7 @@ Embora obsoleto em alguns aspectos, este ensaio ainda é muito cotado entre os
 fãs do Lisp (incluindo eu). Um correspondente me lembrou que a seção intitulada
 <em>O Pior é o Melhor</em> parece-se mais como uma antecipação do Linux. O
 documento está disponível na World Wide Web em <a
-href="http://www.naggum.no/worse-is-better.html" rel="nofollow" target="_blank" "
-rel="nofollow " target="_blank "">www.naggum.no/worse-is-better.html</a>.</p>
+href="http://www.naggum.no/worse-is-better.html">www.naggum.no/worse-is-better.html</a>.</p>
 
 <p>Peopleware: Productive Projects and Teams (New York; Dorset House, 1987; ISBN
 0-932633-05-6), de De Marco e Lister, é uma jóia pouco apreciada na qual fiquei
@@ -1211,8 +1224,7 @@ Miller e Eric Drexler, descrevendo as propriedades emergentes de ecologias
 computacionais de mercado, me ajudaram a me preparar a pensar claramente sobre
 fenômenos análogos na cultura do código aberto quando o Linux esfregou o meu
 nariz neles cinco anos depois. Estes documentos estão disponíveis na Web em <a
-href="http://www.agorics.com/agorpapers.html" rel="nofollow" target="_blank" "
-rel="nofollow " target="_blank "">www.agorics.com/agorpapers.html</a>.</p>
+href="http://www.agorics.com/agorpapers.html">www.agorics.com/agorpapers.html</a>.</p>
 
 <h1>Epílogo: Netscape acata o bazar!</h1>
 
@@ -1225,9 +1237,9 @@ isso poderia acontecer até o dia do anunciamento.</p>
 
 <p>Eric Hahn, Vice Presidente Executivo e Oficial Chefe de Tecnologia da
 <em>Netscape</em>, enviou uma mensagem para mim pouco tempo depois como se
-segue: "Em nome de todos da Netscape, eu quero agradecer a você por ter nos
+segue: “Em nome de todos da Netscape, eu quero agradecer a você por ter nos
 ajudado chegar a este ponto em primeiro lugar. Seus pensamentos e escritos foram
-inspirações fundamentais para nossa decisão."</p>
+inspirações fundamentais para nossa decisão.”</p>
 
 <p>Na semana seguinte eu voei até Silicon Valley a pedido da Netscape para uma
 conferência estratégica de um dia (em 4 de Fevereiro de 1998) com alguns de seus
@@ -1242,7 +1254,6 @@ em semanas.</p>
 no mundo comercial. A cultura do código aberto agora enfrenta um risco; se os
 planos da Netscape não funcionarem, o conceito de código aberto pode se tornar
 tão desacreditado que o mundo comercial não tocará nele de novo por uma década.
-
 </p>
 
 <p>Por outro lado, isto também é uma oportunidade espetacular. Reações iniciais
@@ -1289,3 +1300,6 @@ href="http://github.com/farribeiro/catb-pt">http://github.com/farribeiro/catb-pt
 melhorado a partir do artigo: <a
 href="https://www.vivaolinux.com.br/artigo/A-Catedral-e-o-Bazar-Eric-S.-Raymond/">https://www.vivaolinux.com.br/artigo/A-Catedral-e-o-Bazar-Eric-S.-Raymond/</a>
 </p>
+
+</body>
+</html>
