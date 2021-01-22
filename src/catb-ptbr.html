@@ -5,8 +5,8 @@
 	<title>A catedral e o Bazar</title>
 </head>
 <body>
-﻿<h1>A Catedral e o Bazar  - Eric S. Raymond</h1> Autor: coffnix &lt;coffnix at
-﻿gmail.com&gt; Data: 09/11/2006
+<h1>A Catedral e o Bazar  - Eric S. Raymond</h1> Autor: Fábio Rodrigues Ribeiro
+&lt;farribeiro at gmail.com&gt; Data: 23/09/2017
 
 <h1>Introdução</h1>
 
@@ -62,7 +62,7 @@ construídos como as catedrais, habilmente criados com cuidado por mágicos ou
 pequenos grupos de magos trabalhando em esplêndido isolamento, com nenhum beta
 para ser liberado antes de seu tempo.</p>
 
-<p>O estilo de Linus Torvalds de desenvolvimento – libere cedo e freqüentemente,
+<p>O estilo de Linus Torvalds de desenvolvimento – libere cedo e frequentemente,
 delegue tudo que você possa, esteja aberto ao ponto da promiscuidade – veio como
 uma surpresa. Nenhuma catedral calma e respeitosa aqui – ao invés, a comunidade
 Linux pareceu assemelhar-se a um grande e barulhento bazar de diferentes agendas
@@ -748,7 +748,7 @@ necessárias para outros fora do meu relacionamento. E fazer isto mantendo o
 programa simples e robusto.</p>
 
 <p>A primeira e mais importante esmagadora característica que eu escrevi depois
-de perceber isto foi o suporte a multidrop – a habilidade de capturar correio de
+de perceber isto foi o suporte a multidrop -- a habilidade de capturar correio de
 caixas de correio que acumularam todas as mensagens para um grupo de usuários, e
 então destinar cada pedaço de correio para seus destinatários individuais.</p>
 
@@ -997,7 +997,7 @@ afirmação é desde então conhecida como <em>A Lei de Brooks</em> e é largame
 considerada como correta. Mas se a Lei de Brooks fosse tudo a ser levado em
 consideração, o Linux seria impossível.</p>
 
-<p>O clássico "The Psychology Of Computer Programming", de Gerald Weinberg,
+<p>O clássico <q>The Psychology Of Computer Programming</q>, de Gerald Weinberg,
 sustentou o que, em retrospectiva, nós podemos ver como uma correção essencial
 ao Brooks. Em sua discussão sobre <em>programação sem ego</em>, Weinberg
 observou que nos lugares onde desenvolvedores não são territoriais sobre seu
@@ -1051,7 +1051,7 @@ coerção não produziria os resultados que nós vemos. Weinberg cita a
 autobiografia do anarquista do século 19 chamado <cite>Pyotr Alexeyvich Kropotkin,
 Memórias de um Revolucionista</cite> para demonstrar o efeito neste assunto:</p>
 
-<aside>
+<blockquote>
 
 <p>”Tendo sido criado em uma família possuidora de vassalos, eu entrei a vida
 ativa, como todos os jovens homens da minha idade, com uma grande confidência na
@@ -1064,7 +1064,7 @@ em uma parada militar, mas de nada vale aonde a vida real é considerada, e o
 objetivo pode ser atingido somente pelo esforço severo de muitos propósitos
 convergentes.”</p>
 
-</aside>
+</blockquote>
 
 <p>O <em>esforço severo de muitos propósitos convergentes</em> é precisamente o
 que um projeto como o Linux requer – e o <em>princípio de comando</em> é
@@ -1097,7 +1097,7 @@ guia básico por trás da atividade voluntária.</p>
 <p>Linus, por posicionar ele mesmo como o guia de um projeto em que o
 desenvolvimento é praticamente feito por outros, e por inspirar interesse no
 projeto até que ele se tornasse autossustentável, tem mostrado um intenso
-entendimento do <em>princípio da compreensão comum</em>	de Kropotkin. Esta visão
+entendimento do <em>princípio da compreensão comum</em> de Kropotkin. Esta visão
 quase-econômica do mundo do Linux nos permite ver como esta compreensão é
 aplicada.</p>
 
@@ -1154,6 +1154,250 @@ moralmente correta ou a <em>proteção</em> do software é moralmente errada
 mas simplesmente porque o mundo do software de código fechado não pode vencer
 uma corrida evolucionária com as comunidades de código aberto que podem colocar
 mais tempo hábil ordens de magnitude acima em um problema.</p>
+
+
+<h1 id="na-gestão-e-na-linha-maginot">Na Gestão e na Linha Maginot</h1>
+
+<p>O papel original da Catedral e do Bazar de 1997 terminou com a visão acima –
+a das famosas hordas em rede de programadores / anarquistas que superam e
+superam o mundo hierárquico do software fechado convencional.</p>
+
+<p>No entanto, muitos céticos não estavam convencidos; e as questões que
+levantam merecem um compromisso justo. A maioria das objeções ao argumento do
+bazar se resume à afirmação de que seus proponentes subestimaram o efeito de
+multiplicação de produtividade da gestão convencional.</p>
+
+<p>Gerentes de desenvolvimento de software de mentalidade tradicional muitas
+vezes afirmam que a casualidade com que os grupos de projetos se formam e mudam
+e se dissolvem no mundo de código aberto nega uma parte significativa da
+aparente vantagem dos números que a comunidade de código aberto tem em qualquer
+fonte fechada desenvolvedor. Eles observariam que no desenvolvimento de
+software é um esforço realmente sustentado ao longo do tempo e o grau em que os
+clientes podem esperar continuar investindo no produto que importa, e não
+apenas quantas pessoas jogaram um osso na panela e deixaram a ferver.</p>
+
+<p>Há algo para esse argumento, para ter certeza; na verdade, desenvolvi a
+ideia de que o futuro do serviço é a chave para a economia da produção
+de software no ensaio <a href="http://www.tuxedo.org/~esr/writings/magic-cauldron/">
+The Magic Cauldron.</a></p>
+
+<p>Mas este argumento também tem um grande problema escondido; é uma suposição
+implícita de que o desenvolvimento de fontes abertas não pode proporcionar um
+esforço tão sustentado. Na verdade, tem havido projetos de código aberto que
+mantiveram uma direção coerente e uma comunidade de manutenção efetiva durante
+longos períodos de tempo sem os tipos de estruturas de incentivo ou controles
+institucionais que a administração convencional considera essencial. O
+desenvolvimento do editor GNU Emacs é um exemplo extremo e instrutivo; absorveu
+os esforços de centenas de contribuidores ao longo de 15 anos para uma visão
+arquitetônica unificada, apesar do alto volume de negócios e do fato de que
+apenas uma pessoa (seu autor) esteve ativamente ativa durante todo esse tempo.
+Nenhum editor de código fechado já corresponde a esse registro de
+longevidade.</p>
+
+<p>Isso sugere uma razão para questionar as vantagens do desenvolvimento de
+software convencionalmente gerenciado que é independente do resto dos
+argumentos sobre o modo catedral versus bazar. Se é possível que o GNU Emacs
+exprima uma visão arquitetônica consistente ao longo de 15 anos ou que um
+sistema operacional como o Linux faça o mesmo durante 8 anos de tecnologia de
+plataforma e hardware em rápida mudança; e se (como é realmente o caso) houve
+muitos projetos de código aberto bem arquitetados de mais de 5 anos de duração
+- então temos o direito de nos perguntar o que, em todo caso, a enorme
+sobrecarga do desenvolvimento convencionalmente gerenciado está realmente
+comprando nos.</p>
+
+<p>Seja qual for, certamente não inclui execução confiável por prazo, ou no
+orçamento, ou a todas as características da especificação; É um projeto raro
+<q>gerenciado</q> que atende mesmo a um desses objetivos, e muito menos a
+todos os três. Também não parece ser a capacidade de se adaptar às mudanças na
+tecnologia e no contexto econômico durante a vida útil do projeto; a comunidade
+de código aberto mostrou-se muito mais efetiva nesse aspecto (como pode-se
+facilmente verificar, por exemplo, comparando os 30 anos de história da
+Internet com as meias-vidas curtas de tecnologias proprietárias de rede – ou o
+custo dos 16 – transição para 32 bits no Microsoft Windows com a migração
+ascendente quase sem esforço do Linux durante o mesmo período, não só ao longo
+da linha de desenvolvimento da Intel, mas também para mais de uma dúzia de
+outras plataformas de hardware, incluindo Alpha de 64 bits também).</p>
+
+<p>Uma coisa que muitas pessoas pensam que o modo tradicional compra você é
+alguém para responsabilizar legalmente e potencialmente recuperar a compensação
+se o projeto der errado. Mas isso é uma ilusão; a maioria das licenças de
+software são escritas para rejeitar, mesmo a garantia da comercialização, e
+muito menos o desempenho —e os casos de recuperação bem-sucedida por falta de
+software são sumamente raros. Mesmo que fossem comuns, sentir-se confortado por
+ter alguém para processar seria falta o ponto. Você não queria estar em uma
+ação judicial; você queria um software de trabalho.</p>
+
+<p>Então, o que é tudo o que a administração cobre indiretamente?</p>
+
+<p>Para entender isso, precisamos entender o que os gerentes de desenvolvimento
+de software acreditam que eles fazem. Uma mulher que conheço que parece ser
+muito boa neste trabalho diz que o gerenciamento de projetos de software tem
+cinco funções:</p>
+
+<ul>
+
+<li>Para definir metas e manter todos apontados na mesma direção</li>
+
+<li>Para monitorar e garantir que os detalhes cruciais não sejam ignorados</li>
+
+<li>Para motivar as pessoas a fazer um trabalho árduo, mas necessário</li>
+
+<li>Para organizar a implantação de pessoas para melhor produtividade</li>
+
+<li>Para organizar os recursos necessários para sustentar o projeto</li>
+
+</ul>
+
+<p>Aparentemente metas dignas, tudo isso; mas sob o modelo open-source, e em
+seu contexto social circundante, eles podem começar a parecer estranhamente
+irrelevantes. Vamos levá-los na ordem inversa.</p>
+
+<p>Meu amigo relata que uma grande quantidade de recursos é basicamente
+defensiva; Uma vez que você tenha seu pessoal e máquinas e espaço de
+escritório, você deve defendê-los de gerenciadores de pares concorrentes pelos
+mesmos recursos e de mais altos que tentam alocar o uso mais eficiente de um
+pool limitado.</p>
+
+<p>Mas os desenvolvedores de código aberto são voluntários, auto-selecionados
+tanto para o interesse como para a capacidade de contribuir para os projetos em
+que trabalham (e isso permanece geralmente verdadeiro, mesmo quando eles
+recebem um salário para abrir código aberto). O ethos voluntário tende a tomar
+cuidar do lado do <q>ataque</q> do recurso de triagem automaticamente; As
+pessoas trazem seus próprios recursos à mesa. E há pouca ou nenhuma necessidade
+de um gerente para <q>jogar defesa</q> no sentido convencional.</p>
+
+<p>De qualquer forma, em um mundo de PCs baratas e links de internet rápidos,
+achamos bastante consistente que o único recurso realmente limitante é uma
+atenção qualificada. Projetos de código aberto, quando fundadores,
+essencialmente nunca o fazem por falta de máquinas ou links ou espaço de
+escritório; Eles morrem apenas quando os próprios desenvolvedores perdem o
+interesse.</p>
+
+<p>Sendo assim, é duplamente importante que os hackers de código aberto se
+organizem para a máxima produtividade por auto-seleção – e o meio social
+seleciona impiedosamente a competência. Meu amigo, familiarizado com o mundo
+aberto e os grandes projetos fechados, acredita que o código aberto foi bem
+sucedido, em parte porque sua cultura apenas aceita os mais talentosos 5% da
+população de programação. Ela passa a maior parte do tempo organizando a
+implantação dos outros 95% e, assim, observou de primeira mão a variância bem
+conhecida de um fator de cem produtividade entre os programadores mais capazes
+e os meramente competentes.</p>
+
+<p>O tamanho dessa variância sempre levantou uma questão estranha: os projetos
+individuais e o campo como um todo seriam melhores sem mais de 50% dos menos
+capazes nela? Gerentes pensativos têm compreendido por um longo tempo que se a
+única função do gerenciamento de software convencional fosse converter o menor
+possível de uma perda líquida para uma vitória marginal, o jogo talvez não
+valesse a vela.</p>
+
+<p>O sucesso da comunidade de código aberto agudiza consideravelmente esta
+questão, fornecendo evidências de que muitas vezes é mais barato e mais eficaz
+recrutar voluntários auto-selecionados da Internet do que gerenciar edifícios
+cheios de pessoas que prefeririam fazer outra coisa.</p>
+
+<p>O que nos traz bem a questão da motivação. Uma maneira equivalente e muitas
+vezes ouvida de indicar o objetivo do meu amigo é que o gerenciamento de
+desenvolvimento tradicional é uma compensação necessária para programadores
+pouco motivados que, de outra forma, não conseguirão um bom trabalho.</p>
+
+<p>Esta resposta geralmente viaja com uma afirmação de que a comunidade de
+código aberto só pode ser confiada apenas para fazer um trabalho que seja
+<q>sexy</q> ou tecnicamente doce; Qualquer outra coisa será deixada à
+margem (ou é feita apenas mal), a menos que seja produzido por peões cubículos
+motivados pelo dinheiro, com os gerentes que atacam chicotes sobre eles.
+Abordei as razões psicológicas e sociais por terem sentido essa afirmação em
+<a href="http://www.tuxedo.org/~esr/magic-cauldron/">
+Homesteading the Noosphere</a>. Para os propósitos presentes, no entanto, acho
+mais interessante ressaltar as implicações de aceitá-lo como verdadeiro.</p>
+
+<p>Se o estilo de desenvolvimento de software convencional, de código fechado e
+fortemente gerenciado é realmente defendido apenas por uma espécie de linha de
+problemas Maginot conducente ao tédio, então ele permanecerá viável em cada
+área de aplicação individual somente enquanto ninguém encontrar aqueles
+problemas realmente interessantes e ninguém mais encontra qualquer maneira de
+rootear em torno deles. Porque no momento em que existe uma competição de
+código aberto para um software <q>chato</q>, os clientes vão saber que
+finalmente foi abordado por alguém que escolheu esse problema para resolver por
+causa do fascínio pelo próprio problema – o que, em software como em outros
+tipos de trabalho criativo, é um motivador muito mais eficaz do que o dinheiro
+sozinho.</p>
+
+<p>Ter uma estrutura de gestão convencional unicamente para motivar, então, é
+provavelmente uma boa tática, mas uma estratégia ruim; uma vitória a curto
+prazo, mas a longo prazo uma perda mais segura.</p>
+
+<p>Até agora, o gerenciamento de desenvolvimento convencional parece uma má
+aposta agora contra o código aberto em dois pontos (organização de recursos,
+organização) e, como se estivesse em tempo emprestado em relação a um terceiro
+(motivação). E o gerente convencional de baixo risco não vai obter nenhum
+socorro da questão de monitoramento; O argumento mais forte que a comunidade
+de código aberto tem é que a análise descentralizada dos pares supera todos os
+métodos convencionais para tentar garantir que os detalhes não sejam
+escorregados.</p>
+
+<p>Podemos salvar metas definidoras como justificativa para a sobrecarga do
+gerenciamento de projetos de software convencional? Possivelmente; mas, para
+isso, precisamos de boas razões para acreditar que os comitês de gerenciamento
+e os roteiros corporativos são mais bem-sucedidos na definição de objetivos
+dignos e amplamente compartilhados do que os líderes de projetos e idosos
+tribais que ocupam o papel análogo no mundo de código aberto.</p>
+
+<p>Isso é um problema muito difícil para isso. E não é tanto o lado aberto do
+equilíbrio (a longevidade da Emacs, ou a capacidade de Linus Torvalds de
+mobilizar hordas de desenvolvedores com conversa sobre <q>dominação
+mundial</q>) que o torna difícil. Em vez disso, é a demonstração de terrível
+mecanismo convencional para definir os objetivos dos projetos de software.</p>
+
+<p>Um dos teoremas populares mais conhecidos da engenharia de software é que
+60% a 75% dos projetos de software convencionais nunca são concluídos ou são
+rejeitados pelos usuários pretendidos. Se esse intervalo for em qualquer lugar
+próximo de verdade (e nunca conheci um gerente de qualquer experiência que o
+dispute), mais projetos do que não estão sendo direcionados a metas que são (a)
+não realisticamente alcançáveis, ou (b) simplesmente erradas.</p>
+
+<p>Isso, mais do que qualquer outro problema, é o motivo pelo qual, no mundo de
+engenharia de software de hoje, a própria frase <q>comitê de
+gerenciamento</q> é susceptível de enviar arrepios para a espinha do ouvinte
+- mesmo (ou talvez especialmente) se o ouvinte for um gerente. Os dias em que
+apenas os programadores se queixaram sobre esse padrão são longos; Os desenhos
+animados de Dilbert passam sobre as mesas dos executivos agora.</p>
+
+<p>Nossa resposta, então, ao gerente de desenvolvimento de software
+tradicional, é simples – se a comunidade de código aberto realmente subestimou
+o valor da gestão convencional, por que muitos de vocês mostram desprezo pelo
+seu próprio processo?</p>
+
+<p>Mais uma vez, o exemplo da comunidade de código aberto ajuda
+consideravelmente esta questão – porque nos divertimos fazendo o que fazemos.
+Nosso jogo criativo vem acumulando sucessos técnicos, de compartilhamento de
+mercado e de compartilhamento de mente a uma taxa surpreendente. Estamos
+provando não só que podemos fazer um melhor software, mas essa alegria é um
+trunfo.</p>
+
+<p>Dois anos e meio após a primeira versão deste ensaio, o pensamento mais
+radical que posso oferecer para fechar não é mais uma visão de um mundo de
+software dominado por fontes abertas; Isso, afinal, parece plausível para
+muitas pessoas sóbrias em ternos nos dias de hoje.</p>
+
+<p>Em vez disso, quero sugerir o que pode ser uma lição mais ampla sobre
+software, (e provavelmente sobre todo tipo de trabalho criativo ou
+profissional). Os seres humanos em geral tomam prazer em uma tarefa quando se
+enquadra em uma espécie de zona de desafio ideal; não é tão fácil de ser chato,
+nem muito difícil de conseguir. Um programador feliz é aquele que não é nem
+subutilizado nem pesado com metas mal formuladas e fricção estressante do
+processo. O prazer prevê eficiência.</p>
+
+<p>Relacionar-se ao seu próprio processo de trabalho com medo e aversão (mesmo
+na maneira deslocada e irônica sugerida ao pendurar os desenhos animados de
+Dilbert) deve, portanto, ser considerado em si mesmo como um sinal de que o
+processo falhou. Alegria, humor e brincadeira são, de fato, bens; Não era
+principalmente para a aliteração que eu escrevi sobre <q>hordas
+felizes</q> acima, e não é uma mera piada que a mascote do Linux seja um
+pinguim fofo e neotenoso.</p>
+
+<p>Pode muito bem concluir que um dos efeitos mais importantes do sucesso do
+código aberto será ensinar-nos que o jogo é o modo de trabalho criativo mais
+economicamente eficiente.</p>
 
 <h1>Reconhecimentos</h1>
 
@@ -1231,9 +1475,10 @@ href="http://www.agorics.com/agorpapers.html">www.agorics.com/agorpapers.html</a
 <p>É um sentimento estranho perceber que você está ajudando a fazer história.</p>
 
 <p>Em 22 de Janeiro de 1998, aproximadamente sete meses depois que eu publiquei
-pela primeira vez este documento, Netscape Communications, Inc. anunciou planos
-para liberar o código do Netscape Communicator. Eu não tive nenhuma idéia de que
-isso poderia acontecer até o dia do anunciamento.</p>
+pela primeira vez este documento, Netscape Communications, Inc.
+<a href="http://www.netscape.com/newsref/pr/newsrelease558.html">
+anunciou planos para liberar o código do Netscape Communicator</a>. Eu não tive
+nenhuma idéia de que isso poderia acontecer até o dia do anunciamento.</p>
 
 <p>Eric Hahn, Vice Presidente Executivo e Oficial Chefe de Tecnologia da
 <em>Netscape</em>, enviou uma mensagem para mim pouco tempo depois como se
@@ -1241,28 +1486,67 @@ segue: “Em nome de todos da Netscape, eu quero agradecer a você por ter nos
 ajudado chegar a este ponto em primeiro lugar. Seus pensamentos e escritos foram
 inspirações fundamentais para nossa decisão.”</p>
 
-<p>Na semana seguinte eu voei até Silicon Valley a pedido da Netscape para uma
-conferência estratégica de um dia (em 4 de Fevereiro de 1998) com alguns de seus
-executivos de alto escalão e técnicos. Nós desenhamos juntos a estratégia de
-lançamento da Netscape para o código fonte e licenciamento, e deixamos mais
-alguns planos que nós esperamos irá eventualmente ter impactos mais abrangentes
-e positivos na comunidade do código aberto. Enquanto escrevo, ainda é um pouco
-cedo demais para ser mais específico; porém detalhes devem se tornar conhecidos
-em semanas.</p>
+<p>Na semana seguinte, voei para o Silicon Valley no convite da Netscape para
+uma conferência de estratégia de um dia (em 4 de fevereiro de 1998) com alguns
+de seus principais executivos e técnicos. Criamos a estratégia e a licença de
+lançamento de origem da Netscape juntas.</p>
 
-<p>Netscape está para nos fornecer um real teste em larga escala do modelo bazar
-no mundo comercial. A cultura do código aberto agora enfrenta um risco; se os
-planos da Netscape não funcionarem, o conceito de código aberto pode se tornar
-tão desacreditado que o mundo comercial não tocará nele de novo por uma década.
-</p>
+<p>Poucos dias depois eu escrevi o seguinte:</p>
 
-<p>Por outro lado, isto também é uma oportunidade espetacular. Reações iniciais
-ao movimento em Wall Street e em outros lugares foram cautelosamente positivas.
-Nós também estamos tendo a chance para nos provar. Se a Netscape retomar uma
-substancial fatia do mercado através deste movimento, ela poderá iniciar uma
-revolução tardia na indústria de software.</p>
+<blockquote>
 
-<p>O próximo ano deverá ser muito instrutivo e interessante.</p>
+<p>A Netscape está prestes a nos fornecer um teste em grande escala do mundo
+real do modelo de bazar no mundo comercial. A cultura de código aberto agora
+enfrenta um perigo; se a execução da Netscape não funcionar, o conceito de
+fonte aberta pode ser tão desacreditado que o mundo comercial não o tocará
+novamente por mais uma década.</p>
+
+<p>Por outro lado, esta é também uma oportunidade espetacular. A reação inicial
+ao movimento em Wall Street e em outros lugares têm sido cautelosamente
+positiva. Temos a chance de nos provar também. Se a Netscape recuperar uma
+parcela de mercado substancial por meio desse movimento, ele só pode
+desencadear uma revolução há muito atrasada no setor de software.</p>
+
+<p>O próximo ano deve ser um momento muito instrutivo e interessante.</p>
+
+</blockquote>
+
+<p>E de fato foi. Ao escrever em meados de 2000, o desenvolvimento do chamado
+Mozilla foi apenas um sucesso qualificado. Conseguiu o objetivo original da
+Netscape, que era negar à Microsoft um bloqueio de monopólio no mercado de
+navegadores. Também alcançou alguns sucessos dramáticos (nomeadamente o
+lançamento do mecanismo de renderização Gecko da próxima geração).</p>
+
+<p>No entanto, ainda não obteve o enorme esforço de desenvolvimento de fora do
+Netscape que os fundadores da Mozilla tinham esperado originalmente. O problema
+aqui parece ser que, durante muito tempo, a distribuição Mozilla realmente
+quebrou uma das regras básicas do modelo do bazar; Ele não enviou com algo que
+os contribuidores potenciais poderiam executar facilmente e ver o trabalho.
+(Até mais de um ano após o lançamento, a construção da Mozilla da origem exigiu
+uma licença para a biblioteca Motif proprietária).</p>
+
+<p>Mais negativamente (do ponto de vista do mundo exterior), o grupo Mozilla
+não enviou um navegador de qualidade de produção por dois anos e meio após o
+lançamento do projeto —e em 1999 um dos diretores do projeto causou uma
+sensação renunciando, queixando-se de uma má gestão e oportunidades perdidas.
+&quot;Fonte aberta&quot;, ele observou corretamente, &quot;não é poeira mágica
+mágica&quot;.</p>
+
+<p>E na verdade não é. O prognóstico a longo prazo para Mozilla parece
+dramaticamente melhor agora (em novembro de 2000) do que na hora da carta de
+renúncia de Jamie Zawinski —nas últimas semanas, os lançamentos noturnos
+finalmente passaram o limite crítico para a usabilidade da produção. Mas Jamie
+estava certo em apontar que abrir-se não irá necessariamente salvar um projeto
+existente que sofra de objetivos mal definidos ou código de espaguete ou
+qualquer outro tipo de doenças crônicas da engenharia de software. O Mozilla
+conseguiu fornecer um exemplo ao mesmo tempo de como o código aberto pode ter
+sucesso e como ele pode falhar.</p>
+
+<p>Entretanto, a ideia de código aberto obteve sucessos e encontrou apoiadores
+em outros lugares. Desde o lançamento do Netscape, vimos uma tremenda explosão
+de interesse no modelo de desenvolvimento de código aberto, uma tendência
+impulsionada e impulsionando o sucesso contínuo do sistema operacional Linux. A
+tendência que a Mozilla desencadeou continua em uma taxa acelerada.</p>
 
 <h1>Versão e histórico de mudanças</h1>
 
@@ -1277,7 +1561,7 @@ Kongress, em 21 de Maio de 1997.</p>
 <p>Mudei de <em>software livre</em> para <em>código aberto</em> em 9 de
 fevereiro de 1998 na versão 1.29.</p>
 
-<p>Adicionei "Epílogo: Netscape Acata o Bazar!" em 10 de Fevereiro de 1998 na
+<p>Adicionei “Epílogo: Netscape Acata o Bazar!” em 10 de Fevereiro de 1998 na
 versão 1.31.</p>
 
 <p>Removi o gráfico de Paul Eggert sobre GPL vs. bazar em resposta aos
@@ -1300,6 +1584,10 @@ href="http://github.com/farribeiro/catb-pt">http://github.com/farribeiro/catb-pt
 melhorado a partir do artigo: <a
 href="https://www.vivaolinux.com.br/artigo/A-Catedral-e-o-Bazar-Eric-S.-Raymond/">https://www.vivaolinux.com.br/artigo/A-Catedral-e-o-Bazar-Eric-S.-Raymond/</a>
 </p>
+
+<p>Eu, Fábio Rodrigues Ribeiro, adicionei a tradução para português da seção
+<q>Na Gestão e na Linha Maginot</q>, no original identificado como v1.44 e
+melhorias no epílogo</p>
 
 </body>
 </html>
